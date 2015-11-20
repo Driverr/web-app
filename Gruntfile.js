@@ -456,9 +456,9 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
-    },
+    }//,
 
-    buildcontrol: {
+    /*buildcontrol: {
       options: {
         dir: 'dist',
         commit: true,
@@ -472,7 +472,7 @@ module.exports = function (grunt) {
         }
       }
     }
-
+*/
 
 
   });
