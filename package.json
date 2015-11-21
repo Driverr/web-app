@@ -39,7 +39,7 @@
   },
   "scripts": {
     "test": "grunt test",
-    "postinstall": "grunt",
+    "postinstall": "",
     "start": "node index.js"
   },
   "dependencies": {
