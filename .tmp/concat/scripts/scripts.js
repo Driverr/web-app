@@ -30,37 +30,37 @@
     function config($routeProvider, $locationProvider) {
       $routeProvider
         .when('/', {
-          templateUrl: 'app/views/home.html',
+          templateUrl: 'views/home.html',
           controller: 'HomeCtrl',
           controllerAs: 'home'
         })
         .when('/about', {
-          templateUrl: 'app/views/about.html',
+          templateUrl: 'views/about.html',
           controller: 'AboutCtrl',
           controllerAs: 'about'
         })
         .when('/faq', {
-          templateUrl: 'app/views/faq.html',
+          templateUrl: 'views/faq.html',
           controller: 'FaqCtrl',
           controllerAs: 'faq'
         })
         .when('/login', {
-          templateUrl: 'app/views/login.html',
+          templateUrl: 'views/login.html',
           controller: 'LoginCtrl',
           controllerAs: 'login'
         })
         .when('/register', {
-          templateUrl: 'app/views/register.html',
+          templateUrl: 'views/register.html',
           controller: 'RegisterCtrl',
           controllerAs: 'register'
         })
         .when('/booking', {
-          templateUrl: 'app/views/booking.html',
+          templateUrl: 'views/booking.html',
           controller: 'BookingCtrl',
           controllerAs: 'booking'
         })
         .when('/fare', {
-          templateUrl: 'app/views/fare.html',
+          templateUrl: 'views/fare.html',
           controller: 'FareCtrl',
           controllerAs: 'fare'
         })
