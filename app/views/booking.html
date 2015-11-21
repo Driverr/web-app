@@ -33,7 +33,7 @@
             <input type="text" name="name" class="form-control" ng-model="name" required>
         </div>
 
-        <!-- USERNAME -->
+        <!-- NUMBER -->
         <div class="form-group">
             <label>Number</label>
             <input type="number" name="number" class="form-control" ng-model="user.number" ng-minlength="10" ng-maxlength="10">
@@ -44,6 +44,19 @@
             <label>Email</label>
             <input type="email" name="email" class="form-control" ng-model="email">
         </div>
+
+        <!-- PICKUP LOCATION -->
+        <div class="form-group">
+            <label>Location</label>
+            <input type="location" name="location" class="form-control" ng-model="email">
+        </div>
+
+        <!-- PICKUP DATE/TIME -->
+        <div class="form-group">
+            <label>Date-time</label>
+            <input type="date-time" name="datetime" class="form-control" ng-model="email">
+        </div>
+
         
         <!-- SUBMIT BUTTON -->
         <button type="submit" class="btn btn-primary">Submit</button>
