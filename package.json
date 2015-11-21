@@ -39,7 +39,7 @@
   },
   "scripts": {
     "test": "grunt test",
-    "postinstall": "grunt build",
+    "postinstall": "grunt heroku",
     "start": "node index.js"
   },
   "dependencies": {
