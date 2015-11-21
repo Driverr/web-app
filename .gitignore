@@ -1,2 +1,2 @@
 #Ignore patterns for production
-node_modules
+#node_modules

@@ -30,7 +30,7 @@
     function config($routeProvider, $locationProvider) {
       $routeProvider
         .when('/', {
-          templateUrl: 'views/home.html',
+          templateUrl: '/home.html',
           controller: 'HomeCtrl',
           controllerAs: 'home'
         })
