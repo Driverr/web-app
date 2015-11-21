@@ -479,7 +479,7 @@ module.exports = function (grunt) {
   });
 
   //trying to get grunt to build on heroku
-  grunt.registerTask('heroku', ['default']);
+  grunt.registerTask('heroku', ['build']);
 
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
     if (target === 'dist') {
