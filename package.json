@@ -39,7 +39,7 @@
   },
   "scripts": {
     "test": "grunt test",
-    "postinstall": "grunt build",
+    "postinstall": "bower install; grunt build",
     "start": "node index.js"
   },
   "dependencies": {

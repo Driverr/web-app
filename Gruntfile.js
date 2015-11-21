@@ -72,8 +72,8 @@ module.exports = function (grunt) {
       options: {
         port: 9000,
         // Change this to '0.0.0.0' to access the server from outside.
-        // hostname: 'localhost',
-        hostname: '0.0.0.0',
+         hostname: 'localhost',
+        /*hostname: '0.0.0.0',*/
         livereload: 35729
       },
       livereload: {
@@ -479,7 +479,7 @@ module.exports = function (grunt) {
   });
 
   //trying to get grunt to build on heroku
-  grunt.registerTask('heroku', ['build']);
+  grunt.registerTask('heroku', 'build');
 
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
     if (target === 'dist') {
