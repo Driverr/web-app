@@ -40,7 +40,7 @@
           controllerAs: 'about'
         })
         .when('/faq', {
-          templateUrl: 'views/faq.html',
+          templateUrl: '/faq.html',
           controller: 'FaqCtrl',
           controllerAs: 'faq'
         })

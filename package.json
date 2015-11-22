@@ -39,10 +39,12 @@
   },
   "scripts": {
     "test": "grunt test",
-    "start": "node index.js"
+    "start": "node index.js",
+    "postinstall": "./node_modules/grunt-cli/bin/grunt build"
   },
   "dependencies": {
     "express": "^4.13.3",
+    "grunt-cli": "^0.1.13",
     "gzippo": "^0.2.0",
     "morgan": "^1.6.1"
   }
