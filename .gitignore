@@ -1,3 +1,5 @@
-#Ignore patterns for production
-node_modules
-
+/node_modules
+/dist
+/.tmp
+/.sass-cache
+/bower_components
