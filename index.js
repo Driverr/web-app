@@ -1,12 +1,13 @@
 var express = require('express');
 var http = require('http');
 var gzippo = require('gzippo');
+var path = require('path');
 
 var app = express();
 app.use(gzippo.staticGzip('' + __dirname + '/dist'));
 
 app.use('/*', function(req, res) {
-	res.sendfile( __dirname + '/index.html');
+	res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 var server = http.createServer(app);
