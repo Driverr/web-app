@@ -30,7 +30,7 @@
     function config($routeProvider, $locationProvider) {
       $routeProvider
         .when('/', {
-          templateUrl: '/home.html',
+          templateUrl: 'views/home.html',
           controller: 'HomeCtrl',
           controllerAs: 'home'
         })
@@ -40,7 +40,7 @@
           controllerAs: 'about'
         })
         .when('/faq', {
-          templateUrl: '/faq.html',
+          templateUrl: 'views/faq.html',
           controller: 'FaqCtrl',
           controllerAs: 'faq'
         })
@@ -84,9 +84,9 @@
         var restrictedPage = $.inArray($location.path(), ['/login', '/register', '/home', '/faq', '/booking', '/fare', '/contact']) === -1;
         var loggedIn = $rootScope.globals.currentUser;
 
-       /* if(restrictedPage && !loggedIn) {
+        if(restrictedPage && !loggedIn) {
           $location.path('/login');
-        }*/
+        }
       });
 
     }
