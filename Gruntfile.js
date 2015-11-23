@@ -478,6 +478,8 @@ module.exports = function (grunt) {
 
   });
 
+  grunt.loadNpmTasks('grunt-contrib-compass');
+
   //trying to get grunt to build on heroku
   grunt.registerTask('heroku', 'build');
 

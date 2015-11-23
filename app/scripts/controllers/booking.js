@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc function
- * @name DrivenApp.controller:AboutCtrl
+ * @name DrivenApp.controller:BookingCtrl
  * @description
- * # AboutCtrl
+ * # BookingCtrl
  * Controller of the DrivenApp
  */
 angular.module('DrivenApp')

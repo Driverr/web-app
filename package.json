@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "express": "^4.13.3",
+    "grunt-contrib-compass": "^1.0.4",
     "gzippo": "^0.2.0",
     "morgan": "^1.6.1"
   }
