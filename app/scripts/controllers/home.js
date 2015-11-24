@@ -9,13 +9,13 @@
 	 * Controller of the DrivenApp
 	 */
 	angular
-	  .module('DrivenApp')
-	  .controller('HomeCtrl', function () {
-	    this.awesomeThings = [
-	      'HTML5 Boilerplate',
-	      'AngularJS',
-	      'Karma'
-	    ];
+		.module('DrivenApp')
+		  .controller('HomeCtrl', function () {
+		    this.awesomeThings = [
+		      'HTML5 Boilerplate',
+		      'AngularJS',
+		      'Karma'
+		    ];
 	  });
 
 }) ();

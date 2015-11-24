@@ -1,5 +1,5 @@
-<!doctype html>
-<html>
+<!doctype html >
+ <html lang="en" ng-app="DrivenApp">
   <head>
     <meta charset="utf-8">
     <title>Driven - On demand Drivers | Be Driven. </title>
@@ -12,21 +12,22 @@
     <link rel="stylesheet" href="bower_components/angular-google-places-autocomplete/dist/autocomplete.min.css" />
     <!-- endbower -->
     <!-- endbuild -->
-    <link rel="stylesheet" href="styles/bootstrap.min.css" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="styles/font-awesome.min.css" type="text/css">
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet'>
+    <link type="text/css"href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet'>
+    <link type="text/css" rel="stylesheet" href="styles/font-awesome.min.css">
 
     <!-- Plugin CSS -->
-    <link rel="stylesheet" href="styles/animate.min.css" type="text/css">
+    <link type="text/css" rel="stylesheet" href="styles/animate.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles/creative.css" type="text/css">
+    <link type="text/css" rel="stylesheet" href="styles/creative.css">
     <!-- build:css(.tmp) styles/main.css -->
     <!-- <link rel="stylesheet" href="styles/main.css"> -->
 
     <!-- endbuild -->
   </head>
+
   <body ng-app="DrivenApp" id="page-top">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -45,25 +46,25 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#/">Home</a></li>
+                    <li class="active"><a href="/">Home</a></li>
               <!-- <li><a ng-href="#/about">About</a></li> -->
               <li>
-                <a ng-href="#/booking" class="page-scroll">Booking</a>
+                <a ng-href="/booking" class="page-scroll">Booking</a>
               </li>
               <li>
-                <a ng-href="#/fare" class="page-scroll"></a>Fare Chart
+                <a ng-href="/fare" class="page-scroll">Fare Chart</a>
               </li>
               <li>
-                <a ng-href="#/faq" class="page-scroll">FAQs</a>
+                <a ng-href="/faq" class="page-scroll">FAQs</a>
               </li>
               <li>
-                <a ng-href="#/team" class="page-scroll"></a>Team
+                <a ng-href="/team" class="page-scroll">Team</a>
               </li>
               <li>
-                <a ng-href="#/contact" class="page-scroll">Contact</a>
+                <a ng-href="/contact" class="page-scroll">Contact</a>
               </li>
               <li>
-                <a ng-href="#/register" class="page-scroll">Register</a>
+                <a ng-href="/register" class="page-scroll">Register</a>
               </li>
                 </ul>
             </div>
@@ -82,7 +83,7 @@
 
 
     <div class="container">
-    <div ng-view=""></div>
+    <div ng-view ></div>
     </div>
 
     <div class="footer">
@@ -121,18 +122,22 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/home.js"></script>
         <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/controllers/authentication.js"></script>
+        <script src="scripts/controllers/booking.js"></script>
+        <script src="scripts/controllers/faq.js"></script>
+        <script src="scripts/controllers/fare.js"></script>
+        <script src="scripts/controllers/home.js"></script>
         <script src="scripts/controllers/login.js"></script>
         <script src="scripts/controllers/register.js"></script>
         <script src="scripts/controllers/user.js"></script>
-        <script src="scripts/theme/jquery.easing.min.js"></script>
-        <script src="scripts/theme/jquery.fittext.js"></script>
-        <script src="scripts/theme/wow.min.js"></script>
+        
 
         <!-- Custom Theme JavaScript -->
         <script src="scripts/theme/creative.js"></script>
+        <script src="scripts/theme/jquery.easing.min.js"></script>
+        <script src="scripts/theme/jquery.fittext.js"></script>
+        <script src="scripts/theme/wow.min.js"></script>
 
 
 
