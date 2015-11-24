@@ -26,7 +26,7 @@
       .run(run);
 
     config.$inject = ['$routeProvider', '$locationProvider'];
-
+    console.log("angular app initialized i guess?");
     function config($routeProvider, $locationProvider) {
       $routeProvider
         .when('/', {
