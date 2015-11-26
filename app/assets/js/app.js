@@ -30,12 +30,15 @@
     function config($routeProvider, $locationProvider) {
       $routeProvider
         .when('/', {
-          templateUrl: '../assets/views/home.html',
+          //for grunt serve this works
+          templateUrl: './assets/views/home.html',
+          //for node server.js this works but no css/js?
+          //templateUrl: './views/home.html',
           controller: 'HomeCtrl',
           controllerAs: 'home'
         })
         .when('/about', {
-          templateUrl: '../assets/views/about.html',
+          templateUrl: './views/about.html',
           controller: 'AboutCtrl',
           controllerAs: 'about'
         })
@@ -81,7 +84,7 @@
 
       $rootScope.$on('$locationChangeStart', function (event, next, current) {
         //redirect to login page if not logged in and trying to access a restricted page
-        var restrictedPage = $.inArray($location.path(), ['/login', '/register', '/home', '/faq', '/booking', '/fare', '/contact']) === -1;
+        var restrictedPage = $.inArray($location.path(), ['/login', '/about', '/register', '/home', '/faq', '/booking', '/fare', '/contact']) === -1;
         var loggedIn = $rootScope.globals.currentUser;
 
        /* if(restrictedPage && !loggedIn) {
