@@ -36,7 +36,9 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "start": "node server.js",
+    "postinstall": "grunt"
   },
   "dependencies": {
     "express": "^4.13.3",
