@@ -38,32 +38,32 @@
           controllerAs: 'home'
         })
         .when('/about', {
-          templateUrl: './views/about.html',
+          templateUrl: './assets/views/about.html',
           controller: 'AboutCtrl',
           controllerAs: 'about'
         })
         .when('/faq', {
-          templateUrl: '../views/faq.html',
+          templateUrl: './assets/views/faq.html',
           controller: 'FaqCtrl',
           controllerAs: 'faq'
         })
         .when('/login', {
-          templateUrl: '../views/login.html',
+          templateUrl: './assets/views/login.html',
           controller: 'LoginCtrl',
           controllerAs: 'login'
         })
         .when('/register', {
-          templateUrl: '../views/register.html',
+          templateUrl: './assets/views/register.html',
           controller: 'RegisterCtrl',
           controllerAs: 'register'
         })
         .when('/booking', {
-          templateUrl: '../views/booking.html',
+          templateUrl: './assets/views/booking.html',
           controller: 'BookingCtrl',
           controllerAs: 'booking'
         })
         .when('/fare', {
-          templateUrl: '../views/fare.html',
+          templateUrl: './assets/views/fare.html',
           controller: 'FareCtrl',
           controllerAs: 'fare'
         })
@@ -84,7 +84,7 @@
 
       $rootScope.$on('$locationChangeStart', function (event, next, current) {
         //redirect to login page if not logged in and trying to access a restricted page
-        var restrictedPage = $.inArray($location.path(), ['/login', '/about', '/register', '/home', '/faq', '/booking', '/fare', '/contact']) === -1;
+        var restrictedPage = $.inArray($location.path(), ['/', '/login', '/about', '/register', '/faq', '/booking', '/fare', '/contact']) === -1;
         var loggedIn = $rootScope.globals.currentUser;
 
        /* if(restrictedPage && !loggedIn) {
